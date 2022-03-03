@@ -1,7 +1,7 @@
 ﻿' ****************************************************************
 ' Name:          John Neumeier
 ' Date started:  01/30/22
-' Date updated:  02/15/22
+' Date updated:  03/03/22
 ' Abstract:      Windows Forms Application that helps the user
 '                delete all RAW image files in a folder that do
 '                not have an accompanying JPG file of same name.
@@ -103,6 +103,10 @@ Public Class Form1
 
     End Sub
 
+    ' ----------------------------------------------------------------------------
+    ' Name: btnExit_Click
+    ' Abstract: Handles actions taken when Exit is clicked
+    ' ----------------------------------------------------------------------------
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
 
         'close application
@@ -426,7 +430,6 @@ Public Class Form1
 
             End If
 
-
         Next directory
 
     End Sub
@@ -540,7 +543,6 @@ Public Class Form1
 
             End If
 
-
         Next directory
 
 
@@ -643,10 +645,5 @@ Public Class Form1
         Return blnMatchFound
 
     End Function
-
-
-
-
-
 
 End Class
